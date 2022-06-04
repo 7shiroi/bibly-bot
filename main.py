@@ -24,11 +24,7 @@ async def on_ready():
 # EVENT LISTENER FOR WHEN A NEW MESSAGE IS SENT TO A CHANNEL.
 @bot.event
 async def on_message(message):
-	# CHECKS IF THE MESSAGE THAT WAS SENT IS EQUAL TO "HELLO".
-	if message.content == "hello":
-		# SENDS BACK A MESSAGE TO THE CHANNEL.
-		await message.channel.send("hey dirtbag")
-	elif message.content.split()[0] == "bible":
+	if message.content.split()[0] == "bible":
 		# bible john 3:16 / john 3:16-17
 		book = message.content.split()[1]
 		chapter = message.content.split()[2].split(':')[0]

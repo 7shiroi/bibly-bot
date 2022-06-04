@@ -29,7 +29,7 @@ async def on_message(message):
 		# SENDS BACK A MESSAGE TO THE CHANNEL.
 		await message.channel.send("hey dirtbag")
 	elif message.content.split()[0] == "bible":
-		# bible john 3:16
+		# bible john 3:16 / john 3:16-17
 		book = message.content.split()[1]
 		chapter = message.content.split()[2].split(':')[0]
 		verse = message.content.split()[2].split(':')[1]
